@@ -12,6 +12,7 @@
   box-shadow: 0 0 6px var(--secondary-color-lighter);
   cursor: pointer;
   margin: 8px;
+  max-width: 300px;
   overflow: hidden;
   width: 45%;
 }

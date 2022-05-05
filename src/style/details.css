@@ -3,15 +3,21 @@
   color: var(--secondary-color);
   display: flex;
   flex-direction: column;
+  max-width: 700px;
   padding: 16px;
   width: 100vw;
 }
 
 .details-header {
+  align-items: center;
   background-color: var(--main-color-darker);
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
   padding: 16px;
   position: relative;
+  width: 80%;
 }
 
 .details-title {
@@ -79,6 +85,7 @@ video {
   border-radius: 8px;
   box-shadow: inset 0 0 8px var(--secondary-color-lighter);
   margin: 12px auto 32px;
+  max-width: 700px;
   overflow-x: auto;
   padding: 40px;
   width: 90vw;
@@ -120,6 +127,7 @@ video {
   color: var(--main-color);
   cursor: pointer;
   left: 50%;
+  max-width: 500px;
   padding: 8px 16px;
   position: fixed;
   transform: translateX(-50%);
@@ -134,4 +142,17 @@ video {
 .start-btn:active, .progress-btn:active {
   background-color: var(--secondary-color);
   color: var(--main-color);
+}
+
+@media screen and ( min-width : 950px ) {
+
+
+  .photos-sect {
+    transform: translateX(48%);
+  }
+
+  .copy-btn, .like-btn {
+    font-size: 2rem;
+    margin: 8px;
+  }
 }

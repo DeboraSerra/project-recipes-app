@@ -1,10 +1,17 @@
-.explore-content-sect, .profile-sect, .profile-buttons-container {
+.explore-content-sect, .profile-sect {
   align-items: center;
   display: flex;
   flex-direction: column;
+  height: 90vw;
   justify-content: center;
-  min-height: 90vw;
+  max-height: 850px;
   width: 100vw;
+}
+
+.profile-buttons-container {
+  margin: auto;
+  max-width: 500px;
+  width: 90%;
 }
 
 .explore-btn {
@@ -36,6 +43,8 @@
 .select-sect {
   display: flex;
   justify-content: center;
+  margin: auto;
+  max-width: 500px;
   width: 100vw;
 }
 
