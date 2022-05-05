@@ -8,7 +8,7 @@ const CarouselRecom = ({ type }) => {
   const history = useHistory();
 
   const handleClick = (id) => {
-    history.push(`/${type === 'meal' ? 'foods' : 'drinks'}/${id}`);
+    history.push(`/project-recipes-app/${type === 'meal' ? 'foods' : 'drinks'}/${id}`);
   };
 
   const cardsLength = 6;

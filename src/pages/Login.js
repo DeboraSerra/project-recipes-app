@@ -34,7 +34,7 @@ const Login = ({ history }) => {
     addCocktailToken(1);
     addMealToken(1);
     addUser(email);
-    history.push('/foods');
+    history.push('/project-recipes-app/foods');
   };
 
   return (

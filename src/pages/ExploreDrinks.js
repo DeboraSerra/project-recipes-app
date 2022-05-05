@@ -8,14 +8,14 @@ import '../style/explore.css';
 function ExploreDrinks() {
   const history = useHistory();
   const redirectByIngredient = () => {
-    history.push('/explore/drinks/ingredients');
+    history.push('/project-recipes-app/explore/drinks/ingredients');
   };
 
   const redirectBySurpriseDrink = async () => {
     const apiSurpriseDrink = await getSurpriseDrink();
     const drink = apiSurpriseDrink.drinks;
     const result = drink[0].idDrink;
-    history.push(`/drinks/${result}`);
+    history.push(`/project-recipes-app/drinks/${result}`);
   };
 
   return (

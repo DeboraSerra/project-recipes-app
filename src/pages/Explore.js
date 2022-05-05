@@ -8,11 +8,11 @@ function Explore() {
   const history = useHistory();
 
   const goToExploreFoodsPage = () => {
-    history.push('/explore/foods');
+    history.push('/project-recipes-app/explore/foods');
   };
 
   const goToExploreDrinks = () => {
-    history.push('/explore/drinks');
+    history.push('/project-recipes-app/explore/drinks');
   };
 
   return (

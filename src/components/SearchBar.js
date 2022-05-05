@@ -65,10 +65,10 @@ function SearchBar() {
   };
 
   const handleClick = async () => {
-    if (pathname === '/foods') {
+    if (pathname === '/project-recipes-app/foods') {
       getMeals();
     }
-    if (pathname === '/drinks') {
+    if (pathname === '/project-recipes-app/drinks') {
       getDrinks();
     }
   };
@@ -132,8 +132,10 @@ function SearchBar() {
       </button>
 
       {/* Redireciona para a página de detalhes caso só encontre uma receita */}
-      {meals.length === 1 && <Redirect to={ `/foods/${meals[0].idMeal}` } />}
-      {drinks.length === 1 && <Redirect to={ `/drinks/${drinks[0].idDrink}` } />}
+      {meals.length === 1
+        && <Redirect to={ `/project-recipes-app/foods/${meals[0].idMeal}` } />}
+      {drinks.length === 1
+        && <Redirect to={ `/project-recipes-app/drinks/${drinks[0].idDrink}` } />}
     </div>
   );
 }

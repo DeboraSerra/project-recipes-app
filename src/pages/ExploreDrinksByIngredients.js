@@ -14,7 +14,7 @@ function ExploreDrinksByIngredients() {
 
   const handleClick = (name) => {
     setIngredientDrinkSelected(name);
-    history.push('/drinks');
+    history.push('/project-recipes-app/drinks');
   };
   return (
     <section>

@@ -14,7 +14,7 @@ function ExploreFoodsByIngredients() {
 
   const handleClick = (name) => {
     setIngredientFoodSelected(name);
-    history.push('/foods');
+    history.push('/project-recipes-app/foods');
   };
 
   return (

@@ -17,7 +17,7 @@ function CardDoneRecipes(props) {
 
   const handleShareBtnClick = (sentId) => {
     const COPIED_MSG_TIME = 1500;
-    navigator.clipboard.writeText(`http://localhost:3000${sentId}`);
+    navigator.clipboard.writeText(`${window.location.origin}${sentId}`);
     setCopiedMessage(true);
     setTimeout(() => setCopiedMessage(false), COPIED_MSG_TIME);
   };
@@ -26,7 +26,11 @@ function CardDoneRecipes(props) {
     type === 'food'
       ? (
         <section className="favorite-card">
-          <Link to={ `/foods/${id}` } key={ name } className="favorite-card-container">
+          <Link
+            to={ `/project-recipes-app/foods/${id}` }
+            key={ name }
+            className="favorite-card-container"
+          >
             <img
               src={ image }
               className="card-image"
@@ -66,7 +70,7 @@ function CardDoneRecipes(props) {
             data-testid={ `${index}-horizontal-share-btn` }
             src={ shareIcon }
             className="done-card-btn"
-            onClick={ () => handleShareBtnClick(`/foods/${id}`) }
+            onClick={ () => handleShareBtnClick(`/project-recipes-app/foods/${id}`) }
           >
             <BsShare />
             {copiedMessage && <p>Link copied!</p>}
@@ -75,7 +79,11 @@ function CardDoneRecipes(props) {
       )
       : (
         <section className="favorite-card">
-          <Link to={ `/drinks/${id}` } key={ name } className="favorite-card-container">
+          <Link
+            to={ `/project-recipes-app/drinks/${id}` }
+            key={ name }
+            className="favorite-card-container"
+          >
             <img
               src={ image }
               className="card-image"
@@ -99,7 +107,7 @@ function CardDoneRecipes(props) {
             data-testid={ `${index}-horizontal-share-btn` }
             src={ shareIcon }
             className="done-card-btn"
-            onClick={ () => handleShareBtnClick(`/drinks/${id}`) }
+            onClick={ () => handleShareBtnClick(`/project-recipes-app/drinks/${id}`) }
           >
             <BsShare />
             {copiedMessage && <p>Link copied!</p>}

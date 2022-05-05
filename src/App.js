@@ -25,35 +25,59 @@ function App() {
     <Provider>
       <section className="main-sect">
         <Switch>
-          <Route exact path="/" component={ Login } />
-          <Route path="/explore/drinks/nationalities" component={ NotFound } />
-          <Route path="/foods/:id/in-progress" component={ ProgressFood } />
-          <Route path="/foods/:id" component={ DetailsFood } />
-          <Route exact path="/foods" component={ Foods } />
-          <Route path="/drinks/:id/in-progress" component={ ProgressDrink } />
-          <Route path="/drinks/:id" component={ DetailsDrink } />
-          <Route exact path="/drinks" component={ Drinks } />
           <Route
             exact
-            path="/explore/foods/ingredients"
+            path="/project-recipes-app/"
+            component={ Login }
+          />
+          <Route
+            path="/project-recipes-app/foods/:id/in-progress"
+            component={ ProgressFood }
+          />
+          <Route path="/project-recipes-app/foods/:id" component={ DetailsFood } />
+          <Route exact path="/project-recipes-app/foods" component={ Foods } />
+          <Route
+            path="/project-recipes-app/drinks/:id/in-progress"
+            component={ ProgressDrink }
+          />
+          <Route path="/project-recipes-app/drinks/:id" component={ DetailsDrink } />
+          <Route exact path="/project-recipes-app/drinks" component={ Drinks } />
+          <Route
+            exact
+            path="/project-recipes-app/explore/foods/ingredients"
             component={ ExploreFoodsByIngredients }
           />
           <Route
             exact
-            path="/explore/foods/nationalities"
+            path="/project-recipes-app/explore/foods/nationalities"
             component={ ExploreFoodsByNationality }
           />
-          <Route exact path="/explore/foods" component={ ExploreFoods } />
           <Route
             exact
-            path="/explore/drinks/ingredients"
+            path="/project-recipes-app/explore/foods"
+            component={ ExploreFoods }
+          />
+          <Route
+            exact
+            path="/project-recipes-app/explore/drinks/ingredients"
             component={ ExploreDrinksByIngredients }
           />
-          <Route exact path="/explore/drinks" component={ ExploreDrinks } />
-          <Route exact path="/explore" component={ Explore } />
-          <Route exact path="/profile" component={ Profile } />
-          <Route path="/done-recipes" component={ DoneRecipes } />
-          <Route path="/favorite-recipes" component={ FavoriteRecipes } />
+          <Route
+            exact
+            path="/project-recipes-app/explore/drinks"
+            component={ ExploreDrinks }
+          />
+          <Route exact path="/project-recipes-app/explore" component={ Explore } />
+          <Route exact path="/project-recipes-app/profile" component={ Profile } />
+          <Route path="/project-recipes-app/done-recipes" component={ DoneRecipes } />
+          <Route
+            path="/project-recipes-app/favorite-recipes"
+            component={ FavoriteRecipes }
+          />
+          <Route
+            path="*"
+            component={ NotFound }
+          />
         </Switch>
       </section>
     </Provider>

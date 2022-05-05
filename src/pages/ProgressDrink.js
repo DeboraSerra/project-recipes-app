@@ -58,7 +58,7 @@ function ProgressDrink() {
       tags: recipeDetail.strTags,
     };
     addDoneRecipes('cocktails', details);
-    history.push('/done-recipes');
+    history.push('/project-recipes-app/done-recipes');
   };
 
   return (
@@ -105,7 +105,7 @@ function ProgressDrink() {
     ) : (
       <section className="progress-sect">
         <p>Recipe not in progress</p>
-        <Link className="link" to="/done-recipes">Done recipes</Link>
+        <Link className="link" to="/project-recipes-app/done-recipes">Done recipes</Link>
       </section>
     )
   );

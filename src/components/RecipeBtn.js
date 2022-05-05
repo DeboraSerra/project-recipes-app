@@ -23,9 +23,9 @@ const RecipeBtn = ({ type, id }) => {
       addInProgressRecipe(type, id, ingredients);
     }
     if (type === 'meals') {
-      history.push(`/foods/${id}/in-progress`);
+      history.push(`/project-recipes-app/foods/${id}/in-progress`);
     } else {
-      history.push(`/drinks/${id}/in-progress`);
+      history.push(`/project-recipes-app/drinks/${id}/in-progress`);
     }
   };
 

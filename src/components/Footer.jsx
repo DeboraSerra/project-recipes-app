@@ -10,15 +10,15 @@ import mealIcon from '../images/mealIcon.svg';
 function Footer() {
   const history = useHistory();
   const actionButtonDrink = () => {
-    history.push('/drinks');
+    history.push('/project-recipes-app/drinks');
   };
 
   const actionButtonExplore = () => {
-    history.push('/explore');
+    history.push('/project-recipes-app/explore');
   };
 
   const actionButtonFoods = () => {
-    history.push('/foods');
+    history.push('/project-recipes-app/foods');
   };
 
   return (

@@ -59,7 +59,7 @@ function Foods(props) {
   };
 
   const changePage = (id) => {
-    history.push(`/foods/${id}`);
+    history.push(`/project-recipes-app/foods/${id}`);
   };
 
   return (

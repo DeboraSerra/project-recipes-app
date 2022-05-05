@@ -20,7 +20,7 @@ function ExploreFoodsByNationality() {
   };
 
   const handleClick = (id) => {
-    history.push(`/foods/${id}`);
+    history.push(`/project-recipes-app/foods/${id}`);
   };
 
   const selectedOption = async () => {

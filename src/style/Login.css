@@ -15,6 +15,7 @@
 
 .login-content img {
   margin-top: 32px;
+  max-width: 300px;
   width: 40%;
 }
 

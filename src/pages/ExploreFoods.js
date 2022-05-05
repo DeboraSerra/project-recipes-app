@@ -8,18 +8,18 @@ import '../style/explore.css';
 function ExploreFoods() {
   const history = useHistory();
   const redirectByIngredient = () => {
-    history.push('/explore/foods/ingredients');
+    history.push('/project-recipes-app/explore/foods/ingredients');
   };
 
   const redirectByNationality = () => {
-    history.push('/explore/foods/nationalities');
+    history.push('/project-recipes-app/explore/foods/nationalities');
   };
 
   const redirectBySurpriseMe = async () => {
     const apiSurpriseFood = await getSurpriseFood();
     const food = apiSurpriseFood.meals;
     const result = food[0].idMeal;
-    history.push(`/foods/${result}`);
+    history.push(`/project-recipes-app/foods/${result}`);
   };
 
   return (

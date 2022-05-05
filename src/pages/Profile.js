@@ -10,7 +10,7 @@ function Profile(props) {
 
   const redirectToPage = (page) => {
     if (page === '/') cleanLocalStorage();
-    history.push(`${page}`);
+    history.push(`/project-recipes-app${page}`);
   };
 
   return (

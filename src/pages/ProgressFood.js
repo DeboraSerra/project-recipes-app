@@ -58,7 +58,7 @@ function ProgressFood() {
       tags: recipeDetail.strTags?.split(',') || [],
     };
     addDoneRecipes('meals', details);
-    history.push('/done-recipes');
+    history.push('/project-recipes-app/done-recipes');
   };
 
   return (

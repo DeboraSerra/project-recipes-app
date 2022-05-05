@@ -18,7 +18,7 @@ function FavoriteCard(props) {
   setFavoriteRecipesState } = props;
 
   // URL da receita
-  const urlLink = `/${type}s/${id}`;
+  const urlLink = `/project-recipes-app/${type}s/${id}`;
 
   // State
   const [copiedMessage, setCopiedMessage] = useState(false);
@@ -32,7 +32,7 @@ function FavoriteCard(props) {
 
   // Função que copia o link para a página de detalhes da receita
   const copyLink = () => {
-    navigator.clipboard.writeText(`http://localhost:3000${urlLink}`);
+    navigator.clipboard.writeText(`${window.location.origin}${urlLink}`);
   };
 
   const handleShareBtnClick = () => {

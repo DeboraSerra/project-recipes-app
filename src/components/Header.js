@@ -16,40 +16,42 @@ function Header() {
   const pathRoute = location.pathname;
 
   let routeName = '';
-  const arrayRoute = ['/foods', '/drinks', '/explore/foods/nationalities'];
+  const arrayRoute = ['/project-recipes-app/foods',
+    '/project-recipes-app/drinks',
+    '/project-recipes-app/explore/foods/nationalities'];
 
   switch (pathRoute) {
-  case '/foods':
+  case '/project-recipes-app/foods':
     routeName = 'Foods';
     break;
-  case '/drinks':
+  case '/project-recipes-app/drinks':
     routeName = 'Drinks';
     break;
-  case '/explore':
+  case '/project-recipes-app/explore':
     routeName = 'Explore';
     break;
-  case '/explore/foods':
+  case '/project-recipes-app/explore/foods':
     routeName = 'Explore Foods';
     break;
-  case '/explore/foods/nationalities':
+  case '/project-recipes-app/explore/foods/nationalities':
     routeName = 'Explore Nationalities';
     break;
-  case '/explore/drinks':
+  case '/project-recipes-app/explore/drinks':
     routeName = 'Explore Drinks';
     break;
-  case '/explore/drinks/ingredients':
+  case '/project-recipes-app/explore/drinks/ingredients':
     routeName = 'Explore Ingredients';
     break;
-  case '/explore/foods/ingredients':
+  case '/project-recipes-app/explore/foods/ingredients':
     routeName = 'Explore Ingredients';
     break;
-  case '/profile':
+  case '/project-recipes-app/profile':
     routeName = 'Profile';
     break;
-  case '/done-recipes':
+  case '/project-recipes-app/done-recipes':
     routeName = 'Done Recipes';
     break;
-  case '/favorite-recipes':
+  case '/project-recipes-app/favorite-recipes':
     routeName = 'Favorite Recipes';
     break;
   default:
@@ -64,7 +66,7 @@ function Header() {
         src={ profileIcon }
         onClick={ () => setAvailable(true) }
       >
-        {available && <Redirect to="/profile" />}
+        {available && <Redirect to="/project-recipes-app/profile" />}
         <AiOutlineUser className="react-icon" />
       </button>
 

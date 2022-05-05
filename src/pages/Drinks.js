@@ -60,7 +60,7 @@ function Drinks(props) {
   };
 
   const changePage = (id) => {
-    history.push(`/drinks/${id}`);
+    history.push(`/project-recipes-app/drinks/${id}`);
   };
 
   return (
